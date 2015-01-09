@@ -6,6 +6,8 @@ body, html {
 }
 .title {
   position: absolute;
+  top: 50%; /*Not needed after layout*/
+  left: 50%; /*Not needed after layout*/
 }
 .title1 {
   font-weight: bold; 
@@ -68,67 +70,42 @@ p {
   background-image: url("img2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
 }
 #group2 {
   z-index: 3;
 }
-#group2 .title2-1 {
-  width: 50%;
-  height: 30%;
-  padding: 5%;
-  border-radius: 5px;
-  background: red;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
-}
 #group2 .parallax-layer-back {
-  background-image: url("img3.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgb(123, 210, 102);
 }
 #group3 {
   z-index: 4;
 }
 #group3 .parallax-layer-base {
-  background-image: url("img6.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgb(153, 216, 101);
 }
 #group4 {
   z-index: 2;
 }
 #group4 .parallax-layer-deep {
-  background-image: url("img7.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgb(184, 223, 101);
 }
 #group5 {
   z-index: 3;
 }
 #group5 .parallax-layer-base {
-  background-image: url("img8.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgb(214, 229, 100);
 }
 #group6 {
   z-index: 2;
 }
 #group6 .parallax-layer-back {
-  background-image: url("img9.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgb(245, 234, 100);
 }
 #group7 {
   z-index: 3;
 }
 #group7 .parallax-layer-base {
-  background-image: url("img10.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgb(255, 241, 100);
 }
