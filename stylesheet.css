@@ -1,39 +1,57 @@
-body, html {
+/*General settings
+------------------------------*/
+
+body {
   overflow: hidden;
-  margin: 0px;
-  padding: 0px;
   font-family: Helvetica, Meiryo UI;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 200%;
+}
+p {
+  font-size: 100%;
 }
 .title {
   position: absolute;
+  line-height: 1.5;
+  color: #fff;
+  text-shadow: 0 0 4px #000;
 }
 .title1 {
   font-weight: bold; 
-  color: #fff;
-  text-shadow: 0 0 4px #000;
-  top: 35%;
+  top: 40%;
   left: 10%;
-  line-height: 0.5;
+  line-height: 1.3;
 }
-h2 {
+.title1 h2 {
   font-size: 300%;
 }
-p {
+.title1 p {
   font-size: 150%;
 }
 .parallax {
   -webkit-perspective: 300px;
   perspective: 300px;
   height: 100vh;
+  width: 100vw;
   overflow-x: hidden;
   overflow-y: auto;
 }
 .parallax-group {
   position: relative;
   height: 100vh;
+  width: 100vw;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
+
+/*Parallax layer style
+------------------------------*/
+
 .parallax-layer {
   position: absolute;
   top: 0;
@@ -61,6 +79,10 @@ p {
   transform: translateZ(-600px) scale(3);
   z-index: 2;
 }
+
+/*Parallax group style
+------------------------------*/
+
 #group1 {
   z-index: 5;
 }
@@ -74,11 +96,14 @@ p {
   z-index: 3;
 }
 #group2 .title2-1 {
-  width: 50%;
-  height: 30%;
+  top: 25vh;
+  left: 5vw;
+  width: 30%;
   padding: 5%;
   border-radius: 5px;
-  background: red;
+  -webkit-background: rgba(100, 100, 100, 0.7);
+  -moz-background: rgba(100, 100, 100, 0.7);
+  background: rgba(100, 100, 100, 0.7);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
 }
 #group2 .parallax-layer-back {
@@ -90,14 +115,53 @@ p {
 #group3 {
   z-index: 4;
 }
+#group3 .title3-1 {
+  top: 25vh;
+  right: 5vw;
+  width: 30%;
+  padding: 5%;
+  border-radius: 5px;
+  -webkit-background: rgba(100, 100, 100, 0.7);
+  -moz-background: rgba(100, 100, 100, 0.7);
+  background: rgba(100, 100, 100, 0.7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
 #group3 .parallax-layer-base {
-  background-image: url("img6.jpg");
+  background-image: url("img13.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #group4 {
   z-index: 2;
+}
+#group4 .title4-1 {
+  top: 30vh;
+  left: 5vw;
+  width: 30%;
+  padding: 5%;
+  border-radius: 5px;
+  -webkit-background: rgba(100, 100, 100, 0.7);
+  -moz-background: rgba(100, 100, 100, 0.7);
+  background: rgba(100, 100, 100, 0.7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+.title4-2 img {
+  position: absolute;
+  top: 20vh;
+  left: 70vw;
+  width: 320px;
+  border-radius: 5px;
+  padding: 10px;
+  background: rgba(240, 230, 220, 0.7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+  transform: rotate(2deg);
+}
+.title4-2 img:last-of-type {
+  position: absolute;
+  top: 25vh;
+  left: 50vw;
+  transform: rotate(-4deg);
 }
 #group4 .parallax-layer-deep {
   background-image: url("img7.jpg");
@@ -109,7 +173,7 @@ p {
   z-index: 3;
 }
 #group5 .parallax-layer-base {
-  background-image: url("img8.jpg");
+  background-image: url("img15.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -118,7 +182,7 @@ p {
   z-index: 2;
 }
 #group6 .parallax-layer-back {
-  background-image: url("img9.jpg");
+  background-image: url("img12.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -127,7 +191,7 @@ p {
   z-index: 3;
 }
 #group7 .parallax-layer-base {
-  background-image: url("img10.jpg");
+  background-image: url("img14.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
